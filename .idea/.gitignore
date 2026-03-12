@@ -1,0 +1,15 @@
+# Initialize the local Git repository
+git init
+
+# Populate the .gitignore file
+echo "venv/" > .gitignore
+echo ".env" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo ".pytest_cache/" >> .gitignore
+
+# Stage all your files
+git add .
+
+# Make your first commit
+git commit -m "Initial commit: ORB Trading Agent base structure"
